@@ -1,0 +1,38 @@
+body {
+    background-color: blue;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.link-light:hover {
+    text-decoration: underline;
+}
+
+.sidebar {
+    min-height: 100vh;
+    background-color: #343a40;
+    color: white;
+}
+.sidebar a {
+    color: white;
+    text-decoration: none;
+}
+.sidebar a:hover {
+    background-color: #495057;
+}
+/* Ajuste para el contenido con navbar fijo */
+main {
+    margin-top: 56px; /* Altura del navbar */
+}
+/* Imagen grande al final */
+.large-image {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+}

@@ -58,9 +58,15 @@
             color: white;
             padding: 20px;
             /*top: 60px; Debe coincidir con la altura del navbar */
-            height: calc(100vh - 100px); /* Ajusta la altura para no sobrepasar el navbar */
             z-index: 500; /* Menor que el navbar */
             overflow-y: auto;
+            background-color: #000000;
+            color: white;
+            position: fixed;
+            top: 100px;
+            left: 0;
+            padding: 0px;
+            box-shadow: 0 2px 4px rgb(37, 37, 37);
         }
 
         .sidebar h2 {
@@ -72,6 +78,7 @@
         .sidebar ul {
             list-style: none;
             padding-top: 20px;
+            padding: 10px;
         }
 
         .sidebar ul li {
@@ -138,22 +145,22 @@
 
         /* Imagen grande al final */
         .full-width-image {
-            width: 40vw; /* Ancho en formato vertical (ajusta según prefieras) */
-            height: 100vh; /* Alto para formato vertical */
+            width: 35vw; /* Ancho en formato vertical (ajusta según prefieras) */
+            height: 80vh; /* Alto para formato vertical */
             background: gray;
             color: white;
             display: flex;
             align-items: center;
             justify-content: center;
             object-fit: cover;
-            margin-top: 0px; /* Margen superior */
             margin-bottom: 0px; /* Margen inferior */
-            margin-left: auto;
-            margin-right: auto; /* Mantiene la imagen centrada */
+            margin-left: calc(50% - 20vw + 130px);
+            margin-right: auto;
         }
 
         .image-section {
             background-color: #1c1d33; /* Color de fondo para la sección */
+            padding: 20px;
         }
 
         nav a img {
@@ -180,15 +187,15 @@
 
     <div class="container">
         <!-- Sidebar -->
-        <nav class="sidebar">
+        <div class="sidebar">
             
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Perfil</a></li>
-                <li><a href="#">Configuración</a></li>
-                <li><a href="#">Cerrar sesión</a></li>
+                <li  ><a href="#">Inicio</a></li>
+                <li  ><a href="#">Perfil</a></li>
+                <li  ><a href="#">Configuración</a></li>
+                <li  ><a href="#">Cerrar sesión</a></li>
             </ul>
-        </nav>
+        </div>
 
         <!-- Contenido Principal -->
         <main>

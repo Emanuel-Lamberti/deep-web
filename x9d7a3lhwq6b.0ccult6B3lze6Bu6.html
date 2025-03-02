@@ -77,8 +77,8 @@
 
         .sidebar ul {
             list-style: none;
-            padding-top: 20px;
             padding: 10px;
+            margin-top: 30px;
         }
 
         .sidebar ul li {
@@ -117,25 +117,31 @@
 
         main p {
             color: white;
+            font-size: 35px;
         }
 
         /* Secciones con imagen y texto */
         .row {
             display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
+            gap: 40px;
             margin-bottom: 40px;
+            align-items: center
+            ;
         }
 
         .col {
-            flex: 1;
             min-width: 300px;
+        }
+
+        .col img,
+        .col .placeholder {
+            flex: 1; /* Imágenes y placeholders ocupan menos espacio */
         }
 
         .placeholder {
             background-color: #6c757d;
-            height: 250px;
-            /*width: 250px;*/
+            height: 300px;
+            width: 300px;
             display: flex;
             align-items: center;
             justify-content: center;

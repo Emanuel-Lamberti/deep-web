@@ -39,6 +39,14 @@
             margin-right: 15px;
         }
 
+        .subtitulo {
+            margin-right: 20px;
+        }
+
+        .subtitulo a {
+            margin-right: 30px;
+        }
+
         nav img {
             height: 40px;
         }
@@ -82,7 +90,7 @@
         }
 
         .sidebar ul li {
-            margin-bottom: 10px;
+            margin-bottom: 20px;
         }
 
         .sidebar ul li a {
@@ -117,7 +125,7 @@
 
         main p {
             color: white;
-            font-size: 35px;
+            font-size: 25px;
         }
 
         /* Secciones con imagen y texto */
@@ -147,13 +155,20 @@
             justify-content: center;
             color: white;
             border-radius: 0px;
+            overflow: hidden; /* Evita que la imagen sobresalga */
+        }
+
+        .placeholder img {
+            max-width: 100%; /* Se ajusta al ancho del div */
+            max-height: 100%; /* Se ajusta a la altura del div */
+            object-fit: cover; /* Asegura que la imagen cubra bien el div sin deformarse */
         }
 
         /* Imagen grande al final */
         .full-width-image {
             width: 35vw; /* Ancho en formato vertical (ajusta según prefieras) */
             height: 80vh; /* Alto para formato vertical */
-            background: gray;
+            /*background: gray;*/
             color: white;
             display: flex;
             align-items: center;
@@ -162,6 +177,13 @@
             margin-bottom: 0px; /* Margen inferior */
             margin-left: calc(50% - 20vw + 130px);
             margin-right: auto;
+            overflow: hidden; /* Evita que la imagen sobresalga */
+        }
+
+        .full-width-image img {
+            max-width: 100%; /* Se ajusta al ancho del div */
+            max-height: 100%; /* Se ajusta a la altura del div */
+            object-fit: cover; /* Asegura que la imagen cubra bien el div sin deformarse */
         }
 
         .image-section {
@@ -170,7 +192,7 @@
         }
 
         nav a img {
-            margin-left: 15px;
+            margin-left: 25px;
         }
 
         span {
@@ -182,9 +204,9 @@
     <!-- Navbar -->
     <nav>
         <a href="web.html">
-            <img src="img/logo.png" alt="Logo Ritual Satánico">
+            <img src="/img/klipartz.com.png" alt="Logo Ritual Satánico">
         </a>
-        <div>
+        <div class="subtitulo">
             <a href="#">Inicio</a>
             <a href="#">Acerca de</a>
             <a href="#">Contacto</a>
@@ -193,24 +215,23 @@
 
     <div class="container">
         <!-- Sidebar -->
-        <div class="sidebar">
-            
+        <div class="sidebar">   
             <ul>
-                <li  ><a href="#">Inicio</a></li>
-                <li  ><a href="#">Perfil</a></li>
-                <li  ><a href="#">Configuración</a></li>
-                <li  ><a href="#">Cerrar sesión</a></li>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Perfil</a></li>
+                <li><a href="#">Configuración</a></li>
+                <li><a href="#">Cerrar sesión</a></li>
             </ul>
         </div>
-
         <!-- Contenido Principal -->
         <main>
             <!-- <h1>Contenido Principal</h1> -->
-
             <!-- Imagen seguida de texto -->
             <section class="row">
                 <div class="col">
-                    <div class="placeholder">Imagen aquí</div>
+                    <div class="placeholder">
+                        <img src="/img/IMG_9061.JPG" alt="imagen de libro">
+                    </div>
                 </div>
                 <div class="col">
                     <p>Este conocimiento está contenido en el grimorio prohibido "Tenebris oculis”: El Libro de los Senderos Ocultos", un texto maldito cuyo origen se remonta a sectas desaparecidas del siglo XV. Se cree que existe menos de una docena de copias en el mundo y la información aquí proporcionada es sólo un fragmento del verdadero proceso.</p>
@@ -223,13 +244,17 @@
                     <p>Los registros sobre esta entidad son escasos y fragmentados. Se le menciona en antiguos manuscritos europeos del siglo XV bajo el nombre <span>Lucifugo</span>, siempre vinculado a artistas, músicos y filósofos que alcanzaron fama repentina, seguidos de muertes prematuras o desapariciones inexplicables.</p>
                 </div>
                 <div class="col">
-                    <div class="placeholder">Imagen aquí</div>
+                    <div class="placeholder">
+                        <img src="/img/IMG_9060.JPG" alt="imagen de libro">
+                    </div>
                 </div>
             </section>
 
             <section class="row">
                 <div class="col">
-                    <div class="placeholder">Imagen aquí</div>
+                    <div class="placeholder">
+                        <img src="/img/IMG_9059.JPG" alt="imagen de libro">
+                    </div>
                 </div>
                 <div class="col">
                     <p>Su forma es incierta, los relatos dicen que no tiene un cuerpo propio, sino que se manifiesta a través de reflejos oscuros, sombras distorsionadas y manchas ennegrecidas. Quienes han intentado describirlo hablan de un rostro difuso, con ojos que no reflejan luz, sino que la absorben. En presencia de su influencia, los relojes tienden a detenerse y el sonido ambiente parece amortiguarse.</p>
@@ -241,7 +266,9 @@
                     <p><span>La Mirada Oscura</span> es un antiguo rito de transfiguración destinado a aquellos que buscan trascender la mediocridad y convertirse en figuras inquebrantables de poder y talento. Este ritual establece un vínculo con una entidad preexistente a la moral humana, conocida en los círculos ocultistas como El portador de los ojos negros. Su don no es inspiración, sino revelación: otorga la capacidad de ver la esencia pura del arte y manifestarla sin limitaciones.</p>
                 </div>
                 <div class="col">
-                    <div class="placeholder">Imagen aquí</div>
+                    <div class="placeholder">
+                        <img src="/img/IMG_9057.JPG" alt="imagen de libro">
+                    </div>
                 </div>
             </section>
 
@@ -251,7 +278,7 @@
     </div>
     <div class="image-section">
         <div class="full-width-image">
-            Imagen Grande Aquí
+            <img src="/img/IMG_9055.JPG" alt="imagen de libro">
         </div>
     </div>
 </body>
